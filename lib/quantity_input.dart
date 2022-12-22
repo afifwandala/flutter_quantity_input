@@ -189,7 +189,7 @@ class _QuantityInputState extends State<QuantityInput> {
                 }
               ),
               Container(
-                height: 22,
+                height: 25,
                 width: widget.inputWidth,
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5),
