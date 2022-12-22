@@ -50,11 +50,11 @@ class IconButtonWidget extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(5),
         child: Container(
-          width: 25,
-          height: 25,
+          width: 22,
+          height: 22,
           child: Icon(
             icon,
-            size: 20,
+            size: 15,
             color: iconColor ?? Colors.white
           )
         ),
