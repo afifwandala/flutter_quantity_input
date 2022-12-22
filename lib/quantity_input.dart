@@ -115,11 +115,11 @@ class _QuantityInputState extends State<QuantityInput> {
     String extraZeros = '';
 
     if(widget.decimalDigits > 0 && widget.type == QuantityInputType.double) {
-      extraZeros = '.';
+      extraZeros = ',';
       extraZeros = extraZeros.padRight(widget.decimalDigits + 1, '0');
     }
 
-    NumberFormat formatter = NumberFormat('#,###,###,###,###,###,###,###,###,##0$extraZeros', 'en_US');
+    NumberFormat formatter = NumberFormat('#.###.###.###.###.###.###.###.###.##0$extraZeros', 'en_US');
     
     return formatter.format(value);
   }
@@ -189,7 +189,7 @@ class _QuantityInputState extends State<QuantityInput> {
                 }
               ),
               Container(
-                height: 25,
+                height: 22,
                 width: widget.inputWidth,
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5),
