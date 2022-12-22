@@ -161,6 +161,8 @@ class _QuantityInputState extends State<QuantityInput> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Expanded(
+                child:
               IconButtonWidget(
                 icon: Icons.remove,
                 iconColor: widget.iconColor,
@@ -187,7 +189,9 @@ class _QuantityInputState extends State<QuantityInput> {
                     );
                   widget.onChanged(formattedValue);
                 }
-              ),
+              ),),
+              Expanded(
+                child:
               Container(
                 height: 25,
                 width: widget.inputWidth,
@@ -236,7 +240,9 @@ class _QuantityInputState extends State<QuantityInput> {
                     onChanged: (value) => widget.onChanged(value)
                   )
                 )
-              ),
+              ),),
+              Expanded(
+                child:
               IconButtonWidget(
                 icon: Icons.add,
                 iconColor: widget.iconColor,
@@ -262,7 +268,7 @@ class _QuantityInputState extends State<QuantityInput> {
                     );
                   widget.onChanged(formattedValue);
                 }
-              )
+              ),)
             ]
           )
         ]
